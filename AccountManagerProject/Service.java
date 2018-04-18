@@ -3,20 +3,27 @@ package AccountPackage;
 import java.util.HashMap;
 import java.util.Map;
 
+import org.json.JSONObject;
+
 public class Service {
 
 	private static Account account = new Account("deepi", "sd", 654987);
 
 	private static HashMap services = new HashMap();
+	
+	
 
 	public static void main(String[] args) {
 		add();
-		remove();
+	//	remove();
 	}
 
 	public static void add() {
 		services.put(account.getAccountNumber(), account);
-		System.out.println("The account " + account.getAccountNumber() + " has been stored in our library");
+	//	System.out.println("The account " + account.getAccountNumber() + " has been stored in our library");
+		JSONObject json = new JSONObject(services);
+
+		System.out.println(json);
 	}
 
 	public static void remove() {
