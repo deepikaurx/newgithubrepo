@@ -6,7 +6,7 @@ import org.junit.Test;
 
 public class test12 {
 
-	Account account1=new Account("tralala","blablabla", 123456);
+	Account account1=new Account("anthony","singh", 123456);
 	
 	@Test
 	public void test() {
