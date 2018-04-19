@@ -1,4 +1,4 @@
-package AccountPackage;
+package AccountsM.AccountsM;
 
 import static org.junit.Assert.assertEquals;
 
